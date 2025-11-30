@@ -5,7 +5,7 @@ import logo from "../public/logo.png";
 
 const fetchPokemonData = async () => {
   try {
-    const response = await fetch("https://heroku-azure.vercel.app/api/user");
+    const response = await fetch("https://pokemon-api.pokemon-api.workers.dev/");
     return await response.json();
   } catch (error) {
     console.error("Error fetching Pokémon data:", error);
